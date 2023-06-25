@@ -2,6 +2,7 @@
 
 Differences between original repository and fork:
 
+* Compatibility with PyTorch >=2.0. (🔥)
 * Installation with [requirements.txt](requirements.txt) file.
 
 # Installation
@@ -9,6 +10,13 @@ Differences between original repository and fork:
 ```shell
 pip install -r requirements.txt
 ```
+
+# Inference
+
+```shell
+python -m demo.image_matting.colab.inference --ckpt-path pretrained/modnet_photographic_portrait_matting.ckpt --input-path data/images --output-path .
+```
+
 
 
 

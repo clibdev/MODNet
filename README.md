@@ -1,3 +1,17 @@
+# Fork of [ZHKKKe/MODNet](https://github.com/ZHKKKe/MODNet)
+
+Differences between original repository and fork:
+
+* Installation with [requirements.txt](requirements.txt) file.
+
+# Installation
+
+```shell
+pip install -r requirements.txt
+```
+
+
+
 <h2 align="center">MODNet: Trimap-Free Portrait Matting in Real Time</h2>
 
 <div align="center"><i>MODNet: Real-Time Trimap-Free Portrait Matting via Objective Decomposition (AAAI 2022)</i></div>

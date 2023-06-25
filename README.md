@@ -5,6 +5,7 @@ Differences between original repository and fork:
 * Compatibility with PyTorch >=2.0. (🔥)
 * Original pretrained models from GitHub [releases page](https://github.com/clibdev/MODNet/releases). (🔥)
 * Installation with [requirements.txt](requirements.txt) file.
+* Minor modifications in the [inference.py](demo/image_matting/colab/inference.py) file.
 * The following errors has been fixed:
   * AttributeError: module 'onnx' has no attribute 'load_from_string'.
 
@@ -24,7 +25,7 @@ pip install -r requirements.txt
 # Inference
 
 ```shell
-python -m demo.image_matting.colab.inference --ckpt-path pretrained/modnet_photographic_portrait_matting.ckpt --input-path data/images --output-path .
+python -m demo.image_matting.colab.inference --ckpt-path pretrained/modnet_photographic_portrait_matting.ckpt --image-path data/images/test.jpg --output-path result.jpg
 ```
 
 # Export to ONNX format

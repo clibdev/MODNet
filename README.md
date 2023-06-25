@@ -36,3 +36,9 @@ pip install onnx
 python -m onnx_model.export_onnx --ckpt-path pretrained/modnet_photographic_portrait_matting.ckpt --output-path pretrained/modnet_photographic_portrait_matting.onnx
 python -m onnx_model.export_onnx --ckpt-path pretrained/modnet_webcam_portrait_matting.ckpt --output-path pretrained/modnet_webcam_portrait_matting.onnx
 ```
+
+# ONNX inference
+
+```shell
+python -m onnx_model.inference_onnx --model-path pretrained/modnet_photographic_portrait_matting.onnx --image-path data/images/test.jpg --output-path result.jpg
+```

@@ -3,7 +3,7 @@
 Differences between original repository and fork:
 
 * Compatibility with PyTorch >=2.0. (🔥)
-* Original pretrained models from GitHub [releases page](https://github.com/clibdev/MODNet/releases). (🔥)
+* Original pretrained models and converted ONNX models from GitHub [releases page](https://github.com/clibdev/MODNet/releases). (🔥)
 * Installation with [requirements.txt](requirements.txt) file.
 * Minor modifications in the [inference.py](demo/image_matting/colab/inference.py) file.
 * The following errors has been fixed:
@@ -17,10 +17,10 @@ pip install -r requirements.txt
 
 # Pretrained models
 
-| Name                  | Link                                                                                                            |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------|
-| MODNet (Photographic) | [PyTorch](https://github.com/clibdev/MODNet/releases/latest/download/modnet_photographic_portrait_matting.ckpt) |
-| MODNet (Webcam)       | [PyTorch](https://github.com/clibdev/MODNet/releases/latest/download/modnet_webcam_portrait_matting.ckpt)       |
+| Name                  | Link                                                                                                                                                                                                                          |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MODNet (Photographic) | [PyTorch](https://github.com/clibdev/MODNet/releases/latest/download/modnet_photographic_portrait_matting.ckpt), [ONNX](https://github.com/clibdev/MODNet/releases/latest/download/modnet_photographic_portrait_matting.onnx) |
+| MODNet (Webcam)       | [PyTorch](https://github.com/clibdev/MODNet/releases/latest/download/modnet_webcam_portrait_matting.ckpt), [ONNX](https://github.com/clibdev/MODNet/releases/latest/download/modnet_webcam_portrait_matting.onnx)             |
 
 # Inference
 

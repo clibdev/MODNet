@@ -19,6 +19,8 @@ import argparse
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
+import onnx
+from onnxsim import simplify
 
 from . import modnet_onnx
 
@@ -53,3 +55,6 @@ if __name__ == '__main__':
         modnet.module, dummy_input, args.output_path, export_params = True, 
         input_names = ['input'], output_names = ['output'], 
         dynamic_axes = {'input': {0:'batch_size', 2:'height', 3:'width'}, 'output': {0: 'batch_size', 2: 'height', 3: 'width'}})
+
+    model_onnx, _ = simplify(onnx.load(args.output_path))
+    onnx.save(model_onnx, args.output_path)

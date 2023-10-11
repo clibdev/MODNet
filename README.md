@@ -2,7 +2,7 @@
 
 Differences between original repository and fork:
 
-* Compatibility with PyTorch >=2.0. (🔥)
+* Compatibility with PyTorch >=2.1. (🔥)
 * Original pretrained models and converted ONNX models from GitHub [releases page](https://github.com/clibdev/MODNet/releases). (🔥)
 * Installation with [requirements.txt](requirements.txt) file.
 * [ONNX Simplifier](https://github.com/daquexian/onnx-simplifier) integration in the [export_onnx.py](onnx_model/export_onnx.py) file.

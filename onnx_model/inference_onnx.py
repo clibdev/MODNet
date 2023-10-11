@@ -92,7 +92,7 @@ if __name__ == '__main__':
     im = np.expand_dims(im, axis = 0).astype('float32')
 
     # Initialize session and get prediction
-    session = onnxruntime.InferenceSession(args.model_path, None)
+    session = onnxruntime.InferenceSession(args.model_path, providers=['CPUExecutionProvider'])
     input_name = session.get_inputs()[0].name
     output_name = session.get_outputs()[0].name
     result = session.run([output_name], {input_name: im})

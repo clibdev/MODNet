@@ -45,9 +45,9 @@ if __name__ == '__main__':
 
     if torch.cuda.is_available():
         modnet = modnet.cuda()
-        weights = torch.load(args.ckpt_path)
+        weights = torch.load(args.ckpt_path, weights_only=True)
     else:
-        weights = torch.load(args.ckpt_path, map_location=torch.device('cpu'))
+        weights = torch.load(args.ckpt_path, map_location=torch.device('cpu'), weights_only=True)
     modnet.load_state_dict(weights)
     modnet.eval()
 

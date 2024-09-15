@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # define model & load checkpoint
     modnet = modnet_onnx.MODNet(backbone_pretrained=False)
     modnet = nn.DataParallel(modnet).cuda()
-    state_dict = torch.load(args.ckpt_path)
+    state_dict = torch.load(args.ckpt_path, weights_only=True)
     modnet.load_state_dict(state_dict)
     modnet.eval()
 
